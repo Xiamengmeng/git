@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>git</title>
+</head>
+<body>
+
+  版本控制系统实质上就是用来管理代码的软件,分为三大类:
+  1.本地版本控制系统
+  如Webstorm中的VCS
+  2.集中式版本控制系统
+  如：SVN
+  3.分布式版本控制系统
+  git
+git分为三个区工作区，暂存区和本地仓库
+1.git init：初始化仓库，在本地产生一个.git文件夹，在远程仓库创建时，不需要勾选创建init
+2.git add "文件名"（git add .）将工作区的文件放到暂存区
+3.git commit -m "注释" 将暂存区文件放到本地仓库
+4.git branch：查看分支
+5.git branch 分支名：创建一个分支
+6.git checkout 分支名：切换一个分支
+  git checkout -b 分支名： 创建并切换到该分支
+7.一般在分支写完之后，先在分支上提交到本地，再checkout到master上merge合并
+git checkout master
+git merge index
+然后push到远程仓库，一般在push到远程仓库之前会先pull
+  git pull
+8.git push origin master
+  9.git remote:查询有没有仓库别名，如果没有，可以新建一个仓库别名
+10. git remote add 仓库别名 仓库地址
+
+
+<!--补充内容-->
+1.git diff:查看每次提交的内容的不同
+2.git reset：版本退回，将代码恢复到已经提交的某一个版本中
+
+
+
+</body>
+</html>
